@@ -1,10 +1,28 @@
 baseURL: https://public-jun.github.io/
 languageCode: en-us
-title: My New Hugo Site
+title: Get stronger one day at a time.
 theme:  PaperMod
 
 params:
-  profileMode:
-    enabled: true
-    title: public-jun
-    subtitle: "A student at [42Tokyo](https://42tokyo.jp/)."
+  homeInfoParams:
+    Title: Hi there wave
+    Content: これは1日ひとつ強くなる42Tokyo生の個人ブログです。
+
+  customCSS:
+    - css/custom.css
+
+menu:
+  main:
+    - identifier: works
+      name: Works
+      url: /works/
+      weight: 10
+
+# Search Page
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+enableEmoji: true
