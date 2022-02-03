@@ -2,3 +2,9 @@ baseURL: https://public-jun.github.io/
 languageCode: en-us
 title: My New Hugo Site
 theme:  PaperMod
+
+params:
+  profileMode:
+    enabled: true
+    title: public-jun
+    subtitle: "A student at [42Tokyo](https://42tokyo.jp/)."
