@@ -1,5 +1,5 @@
 baseURL: https://public-jun.github.io/
-languageCode: en-us
+languageCode: ja
 title: Get stronger one day at a time.
 theme:  PaperMod
 
@@ -7,9 +7,12 @@ params:
   homeInfoParams:
     Title: Hi there wave
     Content: これは1日ひとつ強くなる42Tokyo生の個人ブログです。
+  # code cp button
+  ShowCodeCopyButtons: true
 
   customCSS:
     - css/custom.css
+
 
 menu:
   main:
