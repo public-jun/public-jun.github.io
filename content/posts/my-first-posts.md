@@ -2,6 +2,8 @@
 title: "Hello World!!"
 date: 2022-02-03T11:48:12+09:00
 draft: false
+tags: [42Tokyo, blog]
+categories: [blog]
 ---
 
 こんにちは、public-junです
