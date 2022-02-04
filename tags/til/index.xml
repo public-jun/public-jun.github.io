@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TIL on Get stronger one day at a time.</title><link>https://public-jun.github.io/tags/til/</link><description>Recent content in TIL on Get stronger one day at a time.</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 04 Feb 2022 15:39:20 +0900</lastBuildDate><atom:link href="https://public-jun.github.io/tags/til/index.xml" rel="self" type="application/rss+xml"/><item><title>HugoのサイトにTag機能を追加</title><link>https://public-jun.github.io/custom-taxonomies/</link><pubDate>Fri, 04 Feb 2022 15:39:20 +0900</pubDate><guid>https://public-jun.github.io/custom-taxonomies/</guid><description>きっかけ ブログにタグ機能が欲しかったから。
+Taxonomyって何？？ Hugo includes support for user-defined groupings of content called taxonomies. Taxonomies are classifications of logical relationships between content.
+タグやカテゴリなどのユーザーが定義した分類のことをタクソノミーという。
+タクソノミー(Taxonomy)
+コンテンツをグルーピングするための分類法
+ターム(Term)
+実際の具体的なタグやカテゴリの値
+Taxonomyを使う Hugoはデフォルトでタグとカテゴリをサポートしている。
+confingの設定 config.yml
+taxonomies: category: categories tag: tags https://[サイトURL]/tags/
+https://[サイトURL]/categories/
+上記のURLにアクセスするとタグ一覧、カテゴリ一覧ページへアクセスできる。
+ちなみにこのサイトでは
+https://public-jun.github.io/tags/
+https://public-jun.github.io/categories/
+となる。
+記事の Front matter内でタグ、カテゴリ追加 contents/posts/../記事.md
+--- title: &amp;#34;HugoのサイトにTag機能を追加&amp;#34; date: 2022-02-04T15:39:20+09:00 draft: false tags: [42Tokyo, blog, Hugo, TIL] //追加 categories: [Tech] //追加 .</description></item></channel></rss>

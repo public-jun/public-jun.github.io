@@ -71,6 +71,34 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>HugoのサイトにTag機能を追加
+</h2>
+</header>
+<section class=entry-content>
+<p>きっかけ ブログにタグ機能が欲しかったから。
+Taxonomyって何？？ Hugo includes support for user-defined groupings of content called taxonomies. Taxonomies are classifications of logical relationships between content.
+タグやカテゴリなどのユーザーが定義した分類のことをタクソノミーという。
+タクソノミー(Taxonomy)
+コンテンツをグルーピングするための分類法
+ターム(Term)
+実際の具体的なタグやカテゴリの値
+Taxonomyを使う Hugoはデフォルトでタグとカテゴリをサポートしている。
+confingの設定 config.yml
+taxonomies: category: categories tag: tags https://[サイトURL]/tags/
+https://[サイトURL]/categories/
+上記のURLにアクセスするとタグ一覧、カテゴリ一覧ページへアクセスできる。
+ちなみにこのサイトでは
+https://public-jun.github.io/tags/
+https://public-jun.github.io/categories/
+となる。
+記事の Front matter内でタグ、カテゴリ追加 contents/posts/../記事.md
+--- title: "HugoのサイトにTag機能を追加" date: 2022-02-04T15:39:20+09:00 draft: false tags: [42Tokyo, blog, Hugo, TIL] //追加 categories: [Tech] //追加 ....</p>
+</section>
+<footer class=entry-footer><span title="2022-02-04 15:39:20 +0900 +0900">February 4, 2022</span></footer>
+<a class=entry-link aria-label="post link to HugoのサイトにTag機能を追加" href=https://public-jun.github.io/custom-taxonomies/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Hello World!!
 </h2>
 </header>
