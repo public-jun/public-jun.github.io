@@ -2,6 +2,7 @@ baseURL: https://public-jun.github.io/
 languageCode: ja
 title: Get stronger one day at a time.
 theme:  PaperMod
+googleAnalytics: G-1VL8593G1N
 
 params:
   homeInfoParams:
@@ -47,4 +48,3 @@ taxonomies:
   category: categories
   tag: tags
 
-googleAnalytics: G-1VL8593G1N
