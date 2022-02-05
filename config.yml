@@ -3,6 +3,7 @@ languageCode: ja
 title: Get stronger one day at a time.
 theme:  PaperMod
 googleAnalytics: G-1VL8593G1N
+enableRobotsTXT: true
 
 params:
   homeInfoParams:
