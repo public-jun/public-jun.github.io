@@ -48,3 +48,8 @@ taxonomies:
   category: categories
   tag: tags
 
+# sitemap set (google search)
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
