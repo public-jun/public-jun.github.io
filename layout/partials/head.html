@@ -159,12 +159,12 @@
 
 {{- /* Misc */}}
 {{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
-{{- template "_internal/google_analytics.html" . }}
+{{/* - template "_internal/google_analytics.html" . */}}
 {{- template "partials/templates/opengraph.html" . }}
 {{- template "partials/templates/twitter_cards.html" . }}
 {{- template "partials/templates/schema_json.html" . }}
 {{- end -}}
 
 {{ if not .Site.IsServer }}
-  {{ partial "google/analytics" . }}
+{{ partial "google/analytics" . }}
 {{ end }}
