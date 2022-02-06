@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Techl on Get stronger one day at a time.</title><link>https://public-jun.github.io/categories/techl/</link><description>Recent content in Techl on Get stronger one day at a time.</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 06 Feb 2022 00:03:38 +0900</lastBuildDate><atom:link href="https://public-jun.github.io/categories/techl/index.xml" rel="self" type="application/rss+xml"/><item><title>HugoでGoogle Analyticsを使う</title><link>https://public-jun.github.io/Hugo-google-analytics/</link><pubDate>Sun, 06 Feb 2022 00:03:38 +0900</pubDate><guid>https://public-jun.github.io/Hugo-google-analytics/</guid><description>1. はじめに Hugoで作った静的サイトはそのままの設定ではGoogle検索にはかからないので、いくつか設定をしないといけません。
+Google検索で表示されるまで Google Analyticsに登録 Google Search Consoleに登録 今回は Google Analytics 登録編です。
+2. やってみる aiu 1. はじめに xxxx
+hoge.jpg hoge.png img/ss.png x. Markdown CheetSheet Text Format Italic（斜体） Italic（斜体）
+Emphasis（強調） Emphasis（強調）
+Strikethrough（取り消し線）
+This is inline.
+List text test test text test test text test test Horizontal rules Blockquotes（引用） This is Blockquotes</description></item></channel></rss>
