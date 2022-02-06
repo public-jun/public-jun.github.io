@@ -155,8 +155,6 @@
     {{- end }}
 </noscript>
 
-{{- partial "extend_head.html" . -}}
-
 {{- /* Misc */}}
 {{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
 {{- template "_internal/google_analytics.html" . }}
@@ -164,3 +162,6 @@
 {{- template "partials/templates/twitter_cards.html" . }}
 {{- template "partials/templates/schema_json.html" . }}
 {{- end -}}
+
+{{- partial "extend_head.html" . -}}
+
