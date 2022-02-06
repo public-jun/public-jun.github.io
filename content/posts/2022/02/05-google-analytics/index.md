@@ -1,15 +1,34 @@
 ---
 title: "HugoでGoogle Analyticsを使う"
 date: 2022-02-06T00:03:38+09:00
-draft: true
+draft: false
 tags: [Hugo] 
-categories: [Tech]
-url: "Hugo-google-analytics"
+categories: [Techl]
+url: Hugo-google-analytics
 ---
+### 1. はじめに
+Hugoで作った静的サイトはそのままの設定ではGoogle検索にはかからないので、いくつか設定をしないといけません。
+
+### Google検索で表示されるまで
+-----
+1. [Google Analytics](https://analytics.google.com/analytics/web/)に登録
+2. [Google Search Console](https://search.google.com/search-console/welcome?hl=ja)に登録
+
+今回は *Google Analytics* 登録編です。
+
+### 2. やってみる
+aiu
+![hogefull](/posts/2022/02/05-google-analytics/hoge.jpg)
+![hoge](hoge.jpg)
+{{< figure src="hoge.jpg" alt="画像figure" >}}
+{{< figure src="/posts/2022/02/05-google-analytics/hoge.jpg)" alt="画像figure" >}}
+
+
 
 ### 1. はじめに
 xxxx
 
+{{< list-page-resources >}}
 ### x. Markdown CheetSheet
 
 #### Text Format
