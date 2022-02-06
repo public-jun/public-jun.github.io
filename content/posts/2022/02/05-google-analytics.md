@@ -1,10 +1,10 @@
 ---
-title: "05"
-date: 2022-02-05T12:17:37+09:00
+title: "HugoでGoogle Analyticsを使う"
+date: 2022-02-06T00:03:38+09:00
 draft: true
-tags: [42Tokyo] 
+tags: [Hugo] 
 categories: [Tech]
-url: "hoge"
+url: "Hugo-google-analytics"
 ---
 
 ### 1. はじめに
