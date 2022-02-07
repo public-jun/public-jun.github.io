@@ -1,19 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Hugo on Get stronger one day at a time.</title><link>https://public-jun.github.io/tags/hugo/</link><description>Recent content in Hugo on Get stronger one day at a time.</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Mon, 07 Feb 2022 19:45:13 +0900</lastBuildDate><atom:link href="https://public-jun.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>HugoのサイトにUtterancesを使ってコメント機能をつける</title><link>https://public-jun.github.io/Hugo-utterances/</link><pubDate>Mon, 07 Feb 2022 19:45:13 +0900</pubDate><guid>https://public-jun.github.io/Hugo-utterances/</guid><description>1. はじめに Hugoでブログを作ってみたものの、デフォルトではコメント機能はついていません。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Hugo on Get stronger one day at a time.</title><link>https://public-jun.github.io/tags/hugo/</link><description>Recent content in Hugo on Get stronger one day at a time.</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Mon, 07 Feb 2022 19:45:13 +0900</lastBuildDate><atom:link href="https://public-jun.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>HugoのサイトにUtterancesを使ってコメント機能をつける</title><link>https://public-jun.github.io/Hugo-utterances/</link><pubDate>Mon, 07 Feb 2022 19:45:13 +0900</pubDate><guid>https://public-jun.github.io/Hugo-utterances/</guid><description>1. はじめに Hugo でブログを作ってみたものの、デフォルトではコメント機能はついていません。
 今回はUtterancesを使ってみたいと思います。
-2. Hugoのコメント機能 Hugoにコメント機能をつける場合、いくつか選択肢があります。
-鉄板はDisqusでしょうか。これは公式がHugoをサポートしています。
-Docsにも唯一設定手順が書いてあります。
+2. Hugoのコメント機能 Hugo にコメント機能をつける場合、いくつか選択肢があります。
+鉄板は Disqus でしょうか。これは公式が Hugo をサポートしています。
+Docs にも唯一設定手順が書いてあります。
 以下、ドキュメントに紹介されているもの
-Cactus Comments Commento Graph Comment Hyvor Talk IntenseDebate Isso Muut Remark42 Staticman Talkyard Utterances Disqusを使わない理由は無料プランだと広告がつくみたいです。あと登録するのも少し面倒に感じました。
-でも今回使うUtterancesはGitHubのアカウントだけなので、(一応想定読者はテックの人なので)GitHubの認証のみならコメントのハードルも低いかなと思いこれに決めました。
+Cactus Comments Commento Graph Comment Hyvor Talk IntenseDebate Isso Muut Remark42 Staticman Talkyard Utterances Disqus を使わない理由は無料プランだと広告がつくみたいです。あと登録するのも少し面倒に感じました。
+でも今回使う Utterances は GitHub のアカウントだけなので、(一応想定読者はテックの人なので) GitHub の認証のみならコメントのハードルも低いかなと思いこれに決めました。
 あと見た目がいい😊
 Utterancesとは？？ A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!
-Utterancesは軽量なコンポーネントと GitHub issues にコメントを書きこむ bot を提供しています。 これを使うとGitHubのissueと記事やページを紐付け、ページにissueを表示することができます。
-OSSプロジェクトでスター6kついており、かなりの人が使っています。
-テーマもいくつか用意されていて良きです。
-トラックなし、広告なし、その上機能は全て無料です。
-3. Utterancesの導入 今回はUtterancesに絞って説明していきます。 前提としてHugoのサイトをGitHubのpublicなリポジトリで管理しているとします。 また使用テーマはPaperModです。
-基本的には公式サイトを見ながら設定していけば ok です。</description></item><item><title>HugoでGoogle Analyticsを使う</title><link>https://public-jun.github.io/Hugo-google-analytics/</link><pubDate>Sun, 06 Feb 2022 00:03:38 +0900</pubDate><guid>https://public-jun.github.io/Hugo-google-analytics/</guid><description>1. はじめに Hugoで作った静的サイトはそのままの設定ではGoogle検索にはかからないので、いくつか設定をしないといけません。
+Utterances は軽量なコンポーネントと GitHub issues にコメントを書きこむ bot を提供しています。 これを使うと GitHub の issue と記事やページを紐付け、ページに issue を表示することができます。</description></item><item><title>HugoでGoogle Analyticsを使う</title><link>https://public-jun.github.io/Hugo-google-analytics/</link><pubDate>Sun, 06 Feb 2022 00:03:38 +0900</pubDate><guid>https://public-jun.github.io/Hugo-google-analytics/</guid><description>1. はじめに Hugoで作った静的サイトはそのままの設定ではGoogle検索にはかからないので、いくつか設定をしないといけません。
 Google検索で表示されるまで Google Analyticsに登録 Google Search Consoleに登録 今回は Google Analytics 登録編です。
 2. やってみる 測定を開始をクリック
 任意のアカウント名にして次へ
