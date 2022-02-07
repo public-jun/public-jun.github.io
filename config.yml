@@ -21,8 +21,9 @@ params:
         - name: twitter
           url: "https://twitter.com/public_jun"
 
-  params:
   ShowShareButtons: true
+
+  comments: true
 
 menu:
   main:
