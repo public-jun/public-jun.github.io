@@ -1,7 +1,7 @@
 ---
 title: "HugoでGoogle Analyticsを使う"
 date: 2022-02-06T00:03:38+09:00
-draft: true
+draft: false
 tags: [Hugo] 
 categories: [Techl]
 url: Hugo-google-analytics
@@ -17,66 +17,50 @@ Hugoで作った静的サイトはそのままの設定ではGoogle検索には�
 今回は *Google Analytics* 登録編です。
 
 ### 2. やってみる
-aiu
-![hogefull](/posts/2022/02/05-google-analytics/hoge.jpg)
-![hoge](hoge.jpg)
-{{< figure src="hoge.jpg" alt="画像figure" >}}
-{{< figure src="/posts/2022/02/05-google-analytics/hoge.jpg)" alt="画像figure" >}}
+![analytics](./analytics-fs8.png)
+測定を開始をクリック
 
+![acount](./acount-fs8.png)
+任意のアカウント名にして**次へ**
 
+![propaty](./propaty-fs8.png)
+- プロパティ(サイトやアプリの名前)
+- タイムゾーン
+- 通貨
+を入力して**次へ**
 
-### 1. はじめに
-xxxx
+![business](./business-fs8.png)
+上から順に記入していけば大丈夫です。
 
-{{< list-page-resources >}}
-### x. Markdown CheetSheet
+![platform](./platform-fs8.png)
+プラットフォームはwebを選択
 
-#### Text Format
+![setstream](./setstream-fs8.png)
+webサイト のURLを入力します。このサイトでは`https:///public-jun.github.io`のようになります。
+ストリーム名はwebサイトのタイトルを入力すれば大丈夫です。
 
-_Italic（斜体）_
-*Italic（斜体）*
+ストリームを作成すると**測定ID**が生成されます。
 
-__Emphasis（強調）__
-**Emphasis（強調）**
-
-~~Strikethrough（取り消し線）~~
-
-<details><summary>これは詳細表示の例です。</summary>詳細をこっちに書きます。</details>
-
-This is `inline`.
-
-### List
-* text
-    * test
-    * test
-
-- text
-    - test
-    - test
-
-1. text
-1. test
-    1. test
-
-#### Horizontal rules
+### Hugoの設定
 * * *
-***
-*****
-- - -
----------------------------------------
+Hugoの場合、google analytics設定用のテンプレートが用意されているので**configファイル**に追記します。
 
-#### Blockquotes（引用）
-> This is Blockquotes
+`config.yml`:(Google Analytics v4 (gtag.js))の場合、測定IDが**G**からはじまる
+```yml
+googleAnalytics: G-MEASUREMENT_ID
+```
 
-#### Links（参照）
-[]()
+`config.yml`:Google Analytics v3 (analytics.js)の場合、測定IDが**UA**からはじまる
+```yml
+googleAnalytics: UA-PROPERTY_ID
+```
+現在はgtagsで設定しておけば良いと思います。
 
-#### Images（画像）
-![]()
+これでHugo側の設定は完了です。
+アップロードして確認してみましょう。
 
-#### Tables（表）
-| id     | name    | date       |
-| ------ | ------- | ---------- |
-| 1      | test    | 2019-01-01 |
-| 2      | test    | 2019-01-02 |
-| 3      | test    | 2019-01-03 |
+Google Analyticsの*レポート* -> *リアルタイム* を確認してみて、自分がアクセスしたときにユーザー数が0以外であれば成功です:smile:
+
+### 最後に
+次回はGoogle Search Consoleの設定をしてみたいと思いますがどうやら登録に時間がかかる場合もあるらしく、まだできていません。
+登録出来次第まとめたいと思います。
