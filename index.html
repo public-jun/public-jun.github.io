@@ -83,6 +83,31 @@
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>HugoでGoogle Analyticsを使う
+</h2>
+</header>
+<section class=entry-content>
+<p>1. はじめに Hugoで作った静的サイトはそのままの設定ではGoogle検索にはかからないので、いくつか設定をしないといけません。
+Google検索で表示されるまで Google Analyticsに登録 Google Search Consoleに登録 今回は Google Analytics 登録編です。
+2. やってみる 測定を開始をクリック
+任意のアカウント名にして次へ
+プロパティ(サイトやアプリの名前) タイムゾーン 通貨 を入力して次へ 上から順に記入していけば大丈夫です。
+プラットフォームはwebを選択
+webサイト のURLを入力します。このサイトではhttps:///public-jun.github.ioのようになります。 ストリーム名はwebサイトのタイトルを入力すれば大丈夫です。
+ストリームを作成すると測定IDが生成されます。
+Hugoの設定 Hugoの場合、google analytics設定用のテンプレートが用意されているのでconfigファイルに追記します。
+config.yml:(Google Analytics v4 (gtag.js))の場合、測定IDがGからはじまる
+googleAnalytics: G-MEASUREMENT_ID config.yml:Google Analytics v3 (analytics.js)の場合、測定IDがUAからはじまる
+googleAnalytics: UA-PROPERTY_ID 現在はgtagsで設定しておけば良いと思います。
+これでHugo側の設定は完了です。 アップロードして確認してみましょう。
+Google Analyticsのレポート -> リアルタイム を確認してみて、自分がアクセスしたときにユーザー数が0以外であれば成功です😄
+最後に 次回はGoogle Search Consoleの設定をしてみたいと思いますがどうやら登録に時間がかかる場合もあるらしく、まだできていません。 登録出来次第まとめたいと思います。</p>
+</section>
+<footer class=entry-footer><span title="2022-02-06 00:03:38 +0900 +0900">February 6, 2022</span></footer>
+<a class=entry-link aria-label="post link to HugoでGoogle Analyticsを使う" href=https://public-jun.github.io/Hugo-google-analytics/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>HugoのサイトにTag機能を追加
 </h2>
 </header>

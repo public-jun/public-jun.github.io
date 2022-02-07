@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Hugo on Get stronger one day at a time.</title><link>https://public-jun.github.io/tags/hugo/</link><description>Recent content in Hugo on Get stronger one day at a time.</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 04 Feb 2022 15:39:20 +0900</lastBuildDate><atom:link href="https://public-jun.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>HugoのサイトにTag機能を追加</title><link>https://public-jun.github.io/custom-taxonomies/</link><pubDate>Fri, 04 Feb 2022 15:39:20 +0900</pubDate><guid>https://public-jun.github.io/custom-taxonomies/</guid><description>きっかけ ブログにタグ機能が欲しかったから。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Hugo on Get stronger one day at a time.</title><link>https://public-jun.github.io/tags/hugo/</link><description>Recent content in Hugo on Get stronger one day at a time.</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 06 Feb 2022 00:03:38 +0900</lastBuildDate><atom:link href="https://public-jun.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>HugoでGoogle Analyticsを使う</title><link>https://public-jun.github.io/Hugo-google-analytics/</link><pubDate>Sun, 06 Feb 2022 00:03:38 +0900</pubDate><guid>https://public-jun.github.io/Hugo-google-analytics/</guid><description>1. はじめに Hugoで作った静的サイトはそのままの設定ではGoogle検索にはかからないので、いくつか設定をしないといけません。
+Google検索で表示されるまで Google Analyticsに登録 Google Search Consoleに登録 今回は Google Analytics 登録編です。
+2. やってみる 測定を開始をクリック
+任意のアカウント名にして次へ
+プロパティ(サイトやアプリの名前) タイムゾーン 通貨 を入力して次へ 上から順に記入していけば大丈夫です。
+プラットフォームはwebを選択
+webサイト のURLを入力します。このサイトではhttps:///public-jun.github.ioのようになります。 ストリーム名はwebサイトのタイトルを入力すれば大丈夫です。
+ストリームを作成すると測定IDが生成されます。
+Hugoの設定 Hugoの場合、google analytics設定用のテンプレートが用意されているのでconfigファイルに追記します。
+config.yml:(Google Analytics v4 (gtag.js))の場合、測定IDがGからはじまる
+googleAnalytics: G-MEASUREMENT_ID config.yml:Google Analytics v3 (analytics.js)の場合、測定IDがUAからはじまる
+googleAnalytics: UA-PROPERTY_ID 現在はgtagsで設定しておけば良いと思います。
+これでHugo側の設定は完了です。 アップロードして確認してみましょう。
+Google Analyticsのレポート -&amp;gt; リアルタイム を確認してみて、自分がアクセスしたときにユーザー数が0以外であれば成功です😄
+最後に 次回はGoogle Search Consoleの設定をしてみたいと思いますがどうやら登録に時間がかかる場合もあるらしく、まだできていません。 登録出来次第まとめたいと思います。</description></item><item><title>HugoのサイトにTag機能を追加</title><link>https://public-jun.github.io/custom-taxonomies/</link><pubDate>Fri, 04 Feb 2022 15:39:20 +0900</pubDate><guid>https://public-jun.github.io/custom-taxonomies/</guid><description>きっかけ ブログにタグ機能が欲しかったから。
 Taxonomyって何？？ Hugo includes support for user-defined groupings of content called taxonomies. Taxonomies are classifications of logical relationships between content.
 タグやカテゴリなどのユーザーが定義した分類のことをタクソノミーという。
 タクソノミー(Taxonomy)
