@@ -3,7 +3,7 @@ title: "HugoでGoogle Analyticsを使う"
 date: 2022-02-06T00:03:38+09:00
 draft: false
 tags: [Hugo] 
-categories: [Techl]
+categories: [Tech]
 url: Hugo-google-analytics
 ---
 ### 1. はじめに
