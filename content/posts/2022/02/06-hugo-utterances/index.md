@@ -8,17 +8,17 @@ url: "Hugo-utterances"
 ---
 
 ### 1. はじめに
-Hugoでブログを作ってみたものの、デフォルトではコメント機能はついていません。
+Hugo でブログを作ってみたものの、デフォルトではコメント機能はついていません。
 
 今回は[**Utterances**](https://utteranc.es/)を使ってみたいと思います。
 
 ### 2. Hugoのコメント機能
 * * *
-Hugoにコメント機能をつける場合、いくつか選択肢があります。
+Hugo にコメント機能をつける場合、いくつか選択肢があります。
 
-鉄板は[Disqus](https://disqus.com/)でしょうか。これは公式がHugoをサポートしています。
+鉄板は [Disqus](https://disqus.com/) でしょうか。これは公式が Hugo をサポートしています。
 
-[Docs](https://gohugo.io/content-management/comments/)にも唯一設定手順が書いてあります。
+[Docs](https://gohugo.io/content-management/comments/) にも唯一設定手順が書いてあります。
 
 以下、ドキュメントに紹介されているもの
 - [Cactus Comments](https://cactus.chat/docs/integrations/hugo/)
@@ -33,19 +33,19 @@ Hugoにコメント機能をつける場合、いくつか選択肢がありま�
 - [Talkyard](https://www.talkyard.io/blog-comments)
 - [Utterances](https://utteranc.es/)
 
-Disqusを使わない理由は無料プランだと広告がつくみたいです。あと登録するのも少し面倒に感じました。
+Disqus を使わない理由は無料プランだと広告がつくみたいです。あと登録するのも少し面倒に感じました。
 
-でも今回使う*Utterances*はGitHubのアカウントだけなので、(一応想定読者はテックの人なので)GitHubの認証のみならコメントのハードルも低いかなと思いこれに決めました。
+でも今回使う *Utterances* は GitHub のアカウントだけなので、(一応想定読者はテックの人なので) GitHub の認証のみならコメントのハードルも低いかなと思いこれに決めました。
 
 あと見た目がいい:blush:
 
 #### Utterancesとは？？
 > A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!
 
-Utterancesは軽量なコンポーネントと GitHub issues にコメントを書きこむ bot を提供しています。
-これを使うとGitHubのissueと記事やページを紐付け、ページにissueを表示することができます。
+Utterances は軽量なコンポーネントと GitHub issues にコメントを書きこむ bot を提供しています。
+これを使うと GitHub の issue と記事やページを紐付け、ページに issue を表示することができます。
 
-OSSプロジェクトでスター6kついており、かなりの人が使っています。
+OSS プロジェクトでスター6kついており、かなりの人が使っています。
 
 テーマもいくつか用意されていて良きです。
 
@@ -53,13 +53,13 @@ OSSプロジェクトでスター6kついており、かなりの人が使って
 
 ### 3. Utterancesの導入
 * * *
-今回はUtterancesに絞って説明していきます。
-前提としてHugoのサイトをGitHubのpublicなリポジトリで管理しているとします。
-また使用テーマはPaperModです。
+今回は Utterances に絞って説明していきます。
+前提として Hugo のサイトを GitHub の public なリポジトリで管理しているとします。
+また使用テーマは *PaperMod* です。
 
 基本的には[公式サイト](https://utteranc.es/)を見ながら設定していけば ok です。
 
-1. リポジトリに[utterances app](https://github.com/apps/utterances)をインストール
+1. リポジトリに [utterances app](https://github.com/apps/utterances) をインストール
 
 2. フォームにリポジトリの所有者とリポジトリ名を入力
 ![form-repo](./repo.png)
@@ -111,3 +111,8 @@ params:
 
 ダークモードとライトモードでテーマが切り替えられるようにしたいです。
 明日はそろそろ取り組んでいる課題の記事にしていきたい。
+
+### 参考URL
+- https://utteranc.es/
+- https://miyauchi.dev/ja/posts/comment-system/
+- https://mscipio.github.io/post/utterances-comment-engine/
