@@ -15,7 +15,7 @@ https://public-jun.github.io/tags/
 https://public-jun.github.io/categories/
 となる。
 記事の Front matter内でタグ、カテゴリ追加 contents/posts/../記事.md
---- title: &amp;#34;HugoのサイトにTag機能を追加&amp;#34; date: 2022-02-04T15:39:20+09:00 draft: false tags: [42Tokyo, blog, Hugo, TIL] //追加 categories: [Tech] //追加 .</description></item><item><title>Hello World!!</title><link>https://public-jun.github.io/posts/my-first-posts/</link><pubDate>Thu, 03 Feb 2022 11:48:12 +0900</pubDate><guid>https://public-jun.github.io/posts/my-first-posts/</guid><description>こんにちは、public-junです
+--- title: &amp;#34;HugoのサイトにTag機能を追加&amp;#34; date: 2022-02-04T15:39:20+09:00 draft: false tags: [42Tokyo, blog, Hugo, TIL] //追加 categories: [Tech] //追加 .</description></item><item><title>Hello World!!</title><link>https://public-jun.github.io/posts/my-first-posts/</link><pubDate>Thu, 03 Feb 2022 11:48:12 +0900</pubDate><guid>https://public-jun.github.io/posts/my-first-posts/</guid><description>こんにちは、jnakahodです
 日々学んだことを気軽にアウトプットしようと思いブログを作りました。 他のブログサービスを使うより気軽になんでも書けるので個人ブログにしました。
 できるだけ毎日、その日学んだこと投稿するのが目標です。
 ちゃんとした記事ははてブとかに投稿しようかな。。</description></item></channel></rss>
