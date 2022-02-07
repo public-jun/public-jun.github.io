@@ -6,7 +6,7 @@ tags: [42Tokyo, blog]
 categories: [blog]
 ---
 
-こんにちは、public-junです
+こんにちは、jnakahodです
 
 
 日々学んだことを気軽にアウトプットしようと思いブログを作りました。
