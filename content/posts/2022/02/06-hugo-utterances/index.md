@@ -1,63 +1,113 @@
 ---
-title: "Hugoにコメント機能をつける(Utterances)"
+title: "HugoのサイトにUtterancesを使ってコメント機能をつける"
 date: 2022-02-07T19:45:13+09:00
-draft: true
+draft: false
 tags: [Hugo] 
 categories: [Tech]
 url: "Hugo-utterances"
 ---
 
 ### 1. はじめに
-xxxx
+Hugoでブログを作ってみたものの、デフォルトではコメント機能はついていません。
 
-### x. Markdown CheetSheet
+今回は[**Utterances**](https://utteranc.es/)を使ってみたいと思います。
 
-#### Text Format
-
-_Italic（斜体）_
-*Italic（斜体）*
-
-__Emphasis（強調）__
-**Emphasis（強調）**
-
-~~Strikethrough（取り消し線）~~
-
-<details><summary>これは詳細表示の例です。</summary>詳細をこっちに書きます。</details>
-
-This is `inline`.
-
-### List
-* text
-    * test
-    * test
-
-- text
-    - test
-    - test
-
-1. text
-1. test
-    1. test
-
-#### Horizontal rules
+### 2. Hugoのコメント機能
 * * *
-***
-*****
-- - -
----------------------------------------
+Hugoにコメント機能をつける場合、いくつか選択肢があります。
 
-#### Blockquotes（引用）
-> This is Blockquotes
+鉄板は[Disqus](https://disqus.com/)でしょうか。これは公式がHugoをサポートしています。
 
-#### Links（参照）
-[]()
+[Docs](https://gohugo.io/content-management/comments/)にも唯一設定手順が書いてあります。
 
-#### Images（画像）
-![]()
+以下、ドキュメントに紹介されているもの
+- [Cactus Comments](https://cactus.chat/docs/integrations/hugo/)
+- [Commento](https://commento.io/)
+- [Graph Comment](https://graphcomment.com/)
+- [Hyvor Talk](https://talk.hyvor.com/)
+- [IntenseDebate](https://intensedebate.com/)
+- [Isso](https://posativ.org/isso/)
+- [Muut](https://muut.com/)
+- [Remark42](https://remark42.com/)
+- [Staticman](https://staticman.net/)
+- [Talkyard](https://www.talkyard.io/blog-comments)
+- [Utterances](https://utteranc.es/)
 
-#### Tables（表）
-| id     | name    | date       |
-| ------ | ------- | ---------- |
-| 1      | test    | 2019-01-01 |
-| 2      | test    | 2019-01-02 |
-| 3      | test    | 2019-01-03 |
+Disqusを使わない理由は無料プランだと広告がつくみたいです。あと登録するのも少し面倒に感じました。
+
+でも今回使う*Utterances*はGitHubのアカウントだけなので、(一応想定読者はテックの人なので)GitHubの認証のみならコメントのハードルも低いかなと思いこれに決めました。
+
+あと見た目がいい:blush:
+
+#### Utterancesとは？？
+> A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!
+
+Utterancesは軽量なコンポーネントと GitHub issues にコメントを書きこむ bot を提供しています。
+これを使うとGitHubのissueと記事やページを紐付け、ページにissueを表示することができます。
+
+OSSプロジェクトでスター6kついており、かなりの人が使っています。
+
+テーマもいくつか用意されていて良きです。
+
+トラックなし、広告なし、その上機能は全て無料です。
+
+### 3. Utterancesの導入
+* * *
+今回はUtterancesに絞って説明していきます。
+前提としてHugoのサイトをGitHubのpublicなリポジトリで管理しているとします。
+また使用テーマはPaperModです。
+
+基本的には[公式サイト](https://utteranc.es/)を見ながら設定していけば ok です。
+
+1. リポジトリに[utterances app](https://github.com/apps/utterances)をインストール
+
+2. フォームにリポジトリの所有者とリポジトリ名を入力
+![form-repo](./repo.png)
+私の場合は `public-jun/public-jun.github.io` です。
+
+3. 記事と GitHub の issue を紐付ける。今回は `pathname` で設定します。
+![pathname](./pathname.png)
+
+4. GitHub の issue でのラベルを決める。これは任意のラベルで大丈夫です。今回はコメントと分かるように `Comment` とします。
+
+5. テーマを決める。お好きなテーマを選んでください。
+
+ここまですると一番したに設定用のスクリプトが表示されます。
+
+これを `layout/partials/comments.html` 新たに作成し貼り付けます。
+```html
+<script
+	src="https://utteranc.es/client.js"
+	repo="owner/repo"
+	issue-term="pathname"
+	label="Comment"
+	theme="github-light"
+	crossorigin="anonymous" async>
+</script>
+```
+
+`confing.yml`
+```yml
+params:
+  comments: true
+```
+
+これを追記することで`themes/PaperMod/layouts/_default/single.html` の
+```html
+  {{- if (.Param "comments") }}
+  {{- partial "comments.html" . }}
+  {{- end }}
+```
+が有効となりコメントが表示されます。
+
+### 4. コメントする
+* * *
+実際にコメントしてみるとこんな感じ
+![comment](./comment.png)
+
+### 5. 最後に
+これでいい感じにコメント機能が追加できたと思います。
+もし読んでくださった方がいたら、コメントくれると嬉しいです:smile:
+
+ダークモードとライトモードでテーマが切り替えられるようにしたいです。
+明日はそろそろ取り組んでいる課題の記事にしていきたい。
