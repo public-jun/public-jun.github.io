@@ -25,6 +25,11 @@ params:
 
   comments: true
 
+  description: Text about my cool site
+  images:
+  - favicon.ico
+  title: My cool site
+
 menu:
   main:
     - identifier: works
@@ -57,5 +62,6 @@ enableEmoji: true
 taxonomies:
   category: categories
   tag: tags
+  series: series
 
 # sitemap set (google search)
