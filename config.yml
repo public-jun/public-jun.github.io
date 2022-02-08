@@ -25,10 +25,10 @@ params:
 
   comments: true
 
-  description: jnakahod's blog
+  description: 1日ひとつ強くなる42Tokyo生の個人ブログです。
   images:
-  - blog-card-pic.png
-  title: My cool site
+  - first-blog-card-fs8.png
+  title: jnakahod's blog
 
 menu:
   main:
