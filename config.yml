@@ -25,9 +25,9 @@ params:
 
   comments: true
 
-  description: Text about my cool site
+  description: jnakahod's blog
   images:
-  - favicon.ico
+  - blog-card-pic.png
   title: My cool site
 
 menu:
