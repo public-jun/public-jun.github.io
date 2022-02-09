@@ -1,11 +1,11 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "c++98で自作コンテナ その1"
+date: 2022-02-09T17:07:46+09:00
 draft: true
-tags: [ , , ] 
-categories: []
-series: []
-url: ""
+tags: [42Tokyo, c++] 
+categories: [42Tokyo]
+series: [c++98で自作コンテナ]
+url: "my-container-part1"
 ---
 
 ### 1. はじめに

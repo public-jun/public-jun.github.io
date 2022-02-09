@@ -5,6 +5,10 @@ theme:  PaperMod
 googleAnalytics: G-1VL8593G1N
 enableRobotsTXT: true
 
+#Show Table of Contents (Toc) on blog post
+ShowToc: true
+TocOpen: true
+
 params:
   homeInfoParams:
     Title: Hi there wave
@@ -23,12 +27,20 @@ params:
 
   ShowShareButtons: true
 
+  defaultTheme: auto # to switch between dark or light according to browser theme
+
+  ShowBreadCrumbs: true
+
+  ShowPostNavLinks: true
+
+
   comments: true
 
   description: 1日ひとつ強くなる42Tokyo生の個人ブログです。
   images:
   - first-blog-card-fs8.png
   title: jnakahod's blog
+
 
 menu:
   main:
@@ -48,6 +60,10 @@ menu:
       name: Search
       url: /search/
       weight: 4
+    - identifier: archive
+      name: Archive
+      url: /archives/
+      weight: 5
 
 # Search Page
 outputs:
