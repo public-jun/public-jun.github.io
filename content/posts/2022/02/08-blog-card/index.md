@@ -10,7 +10,7 @@ url: "make-blog-card"
 ### 1. はじめに
 Hugoで作ったサイトは共有された時、ブログカードはデフォルトでは作成されません。
 ブログカードは下記の画像です。
-![demo-card](./demo-card.png)
+![demo-card](./demo-card-fs8.png)
 タイトル、説明、画像といったものがのっています。
 これらの情報を提供しているのが **Open Graph Protocol(OGP)** です。 
 
