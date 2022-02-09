@@ -3,11 +3,11 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Tags | Get stronger one day at a time.</title>
+<title>GIMP | Get stronger one day at a time.</title>
 <meta name=keywords content>
 <meta name=description content="1日ひとつ強くなる42Tokyo生の個人ブログです。">
 <meta name=author content>
-<link rel=canonical href=https://public-jun.github.io/tags/>
+<link rel=canonical href=https://public-jun.github.io/tags/gimp/>
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.7899ecd514ee97794ab693d90a7458be9e891743be273be91f0cf045fd564bdb.css integrity="sha256-eJns1RTul3lKtpPZCnRYvp6JF0O+JzvpHwzwRf1WS9s=" rel="preload stylesheet" as=style>
 <link rel=icon href=https://public-jun.github.io/favicon.ico>
 <link rel=icon type=image/png sizes=16x16 href=https://public-jun.github.io/favicon-16x16.png>
@@ -17,20 +17,20 @@
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.92.1">
-<link rel=alternate type=application/rss+xml href=https://public-jun.github.io/tags/index.xml>
+<link rel=alternate type=application/rss+xml href=https://public-jun.github.io/tags/gimp/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
 </noscript>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VL8593G1N"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1VL8593G1N',{anonymize_ip:!1})}</script>
-<meta property="og:title" content="Tags">
+<meta property="og:title" content="GIMP">
 <meta property="og:description" content="1日ひとつ強くなる42Tokyo生の個人ブログです。">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://public-jun.github.io/tags/"><meta property="og:image" content="https://public-jun.github.io/first-blog-card-fs8.png"><meta property="og:site_name" content="jnakahod's blog">
+<meta property="og:url" content="https://public-jun.github.io/tags/gimp/"><meta property="og:image" content="https://public-jun.github.io/first-blog-card-fs8.png"><meta property="og:site_name" content="jnakahod's blog">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://public-jun.github.io/first-blog-card-fs8.png">
-<meta name=twitter:title content="Tags">
+<meta name=twitter:title content="GIMP">
 <meta name=twitter:description content="1日ひとつ強くなる42Tokyo生の個人ブログです。">
 <meta name=google-site-verification content="E5b3YATxpHh_A3m3S9muzf6zlijSmgyzjmoxdBnz_OE">
 </head>
@@ -53,7 +53,7 @@
 </li>
 <li>
 <a href=https://public-jun.github.io/tags/ title=Tags>
-<span class=active>Tags</span>
+<span>Tags</span>
 </a>
 </li>
 <li>
@@ -71,25 +71,24 @@
 </header>
 <main class=main>
 <header class=page-header>
-<h1>Tags</h1>
+<h1>GIMP</h1>
 </header>
-<ul class=terms-tags>
-<li>
-<a href=https://public-jun.github.io/tags/42tokyo/>42Tokyo <sup><strong><sup>2</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://public-jun.github.io/tags/blog/>blog <sup><strong><sup>2</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://public-jun.github.io/tags/gimp/>GIMP <sup><strong><sup>1</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://public-jun.github.io/tags/hugo/>Hugo <sup><strong><sup>4</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://public-jun.github.io/tags/til/>TIL <sup><strong><sup>1</sup></strong></sup> </a>
-</li>
-</ul>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Hugo で作ったサイトにブログカード(OGP)を設定
+</h2>
+</header>
+<section class=entry-content>
+<p>1. はじめに Hugoで作ったサイトは共有された時、ブログカードはデフォルトでは作成されません。 ブログカードは下記の画像です。 タイトル、説明、画像といったものがのっています。 これらの情報を提供しているのが Open Graph Protocol(OGP) です。
+今回はブログカードの画像を用意して、Hugo の config ファイルに OGP の設定を記述しブログカードを作成します。
+2. Open Graph Protocol(OGP)、OGP 画像って何？？ 公式より
+The Open Graph protocol enables any web page to become a rich object in a social graph. For instance, this is used on Facebook to allow any web page to have the same functionality as any other object on Facebook.
+OGP を用いると任意の Web ページをリッチなソーシャルグラフのオブジェクトにすることができます。
+要するに、ページのブログカードに必要な情報を取ってきてブログカードを作る仕組みの一つです。...</p>
+</section>
+<footer class=entry-footer><span title="2022-02-08 23:58:58 +0900 +0900">February 8, 2022</span></footer>
+<a class=entry-link aria-label="post link to Hugo で作ったサイトにブログカード(OGP)を設定" href=https://public-jun.github.io/make-blog-card/></a>
+</article>
 </main>
 <footer class=footer>
 <span>&copy; 2022 <a href=https://public-jun.github.io/>Get stronger one day at a time.</a></span>
