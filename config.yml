@@ -3,7 +3,7 @@ languageCode: ja
 title: Get stronger one day at a time.
 theme:  PaperMod
 googleAnalytics: G-1VL8593G1N
-enableRobotsTXT: true
+enableRobotsTXT: false
 
 #Show Table of Contents (Toc) on blog post
 ShowToc: true
@@ -81,7 +81,3 @@ taxonomies:
   series: series
 
 # sitemap set (google search)
-sitemap:
-  changefreq: monthly
-  filename: sitemap.xml
-  priority: 0.5
