@@ -1,3 +1,5 @@
 User-agent: *
-Disallow:
+Disallow: /categories/
+Disallow: /tags/
+Disallow: /series/
 Sitemap: https://public-jun.github.io/sitemap.xml
