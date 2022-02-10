@@ -44,25 +44,25 @@ params:
 
 menu:
   main:
-    - identifier: works
-      name: Works
-      url: /works/
-      weight: 1
+    # - identifier: works
+    #   name: Works
+    #   url: /works/
+    #   weight: 1
     - identifier: tags
       name: Tags
       url: /tags/
       weight: 2
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 3
-    - identifier: search
-      name: Search
-      url: /search/
-      weight: 4
+    # - identifier: categories
+    #   name: Categories
+    #   url: /categories/
+    #   weight: 3
     - identifier: archive
       name: Archive
       url: /archives/
+      weight: 4
+    - identifier: search
+      name: Search
+      url: /search/
       weight: 5
 
 # Search Page
