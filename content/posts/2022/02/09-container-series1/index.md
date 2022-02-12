@@ -9,7 +9,9 @@ url: "my-container-part1"
 ---
 
 ### 1. はじめに
-xxxx
+これはc++98でコンテナを実装する備忘録です。
+コンテナがどのようにできているのかまず調べてみようと思います。
+
 
 ### x. Markdown CheetSheet
 
