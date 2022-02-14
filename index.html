@@ -83,6 +83,19 @@
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>c++ における typename とは
+</h2>
+</header>
+<section class=entry-content>
+<p>1. はじめに STL コンテナを自作している時、 typename の使い方をしっかり理解していなかったので自分なりにまとめてみました。
+2. typename とは cppreference.com typename の説明より
+In the template parameter list of a template declaration, typename can be used as an alternative to class to declare type template parameters . Inside a declaration or a definition of a template, typename can be used to declare that a dependent qualified name is a type. c++ のテンプレート宣言時には、型名を明示する際に class の代わりに typename を使用してテンプレートパラメータを宣言することができます。 template&lt;typename T> void f() {} template&lt;class T> void f() {} これはどちらでもコンパイルが通ります。...</p>
+</section>
+<footer class=entry-footer><span title="2022-02-13 19:19:37 +0900 +0900">February 13, 2022</span></footer>
+<a class=entry-link aria-label="post link to c++ における typename とは" href=https://public-jun.github.io/cpp-typename/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Hugo で作ったサイトにブログカード(OGP)を設定
 </h2>
 </header>
