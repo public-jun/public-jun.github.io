@@ -1,6 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
+description: Text about this post
 draft: true
 tags: [ , , ] 
 categories: []
