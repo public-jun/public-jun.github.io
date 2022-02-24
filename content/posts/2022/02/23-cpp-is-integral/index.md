@@ -1,7 +1,7 @@
 ---
 title: "c++98 で is_integral 実装"
 date: 2022-02-23T13:37:59+09:00
-draft: true
+draft: false
 tags: [42Tokyo, c++] 
 categories: [42Tokyo]
 series: [c++98で自作コンテナ]
