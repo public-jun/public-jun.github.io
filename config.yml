@@ -6,8 +6,6 @@ googleAnalytics: G-1VL8593G1N
 enableRobotsTXT: false
 
 #Show Table of Contents (Toc) on blog post
-ShowToc: true
-TocOpen: true
 
 params:
   homeInfoParams:
@@ -41,6 +39,8 @@ params:
   - first-blog-card-fs8.png
   title: jnakahod's blog
 
+  ShowToc: true
+  TocOpen: true
 
 menu:
   main:
@@ -79,4 +79,3 @@ taxonomies:
   category: categories
   tag: tags
   series: series
-
