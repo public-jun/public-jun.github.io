@@ -1,6 +1,7 @@
 ---
 title: "c++98 で is_integral 実装"
 date: 2022-02-23T13:37:59+09:00
+description: c++98 で STL コンテナを自作するときに is_integral を実装する必要があったので今回はそのまとめです。
 draft: false
 tags: [42Tokyo, c++] 
 categories: [42Tokyo]
