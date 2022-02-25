@@ -70,6 +70,23 @@
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>enable_if 作ってみた
+</h2>
+</header>
+<section class=entry-content>
+<p>1. はじめに c++98 で STL コンテナを自作するときに enable_if を実装する必要があったので今回はそのまとめです。あくまで、c++98 ベースで作っていきます。
+前回の is_integral を使うので、場合によっては参照してください。
+2. SFINAE とは cpprefjp より引用
+「SFINAE (Substitution Failure Is Not An Errorの略称、スフィネェと読む)」は、テンプレートの置き換えに失敗した際に、即時にコンパイルエラーとはせず、置き換えに失敗した関数をオーバーロード解決の候補から除外するという言語機能である。
+テンプレート引数の展開に不正があっても、エラーにはならず候補から外され、コンパイルは続行される。
+残った候補の中から置き換えに成功したものを実行する。
+struct Test { typedef void type; }; template &lt;typename T> void f(typename T::type) {} // 定義#1 template &lt;typename T> void f(T) {} // 定義#2 int main() { f&lt;Test>(10); // 定義#1 の呼び出し f&lt;int>(10); // 定義#2 の呼び出し } f&lt;Test>(10) について、Test::type が存在するので 定義1 が実体化する。 f&lt;int>(10) について、int型は int::foo が存在しないので 定義1 が候補から除外され、 定義2 が実体化される。 このようにテンプレート実引数の型を調べて、実体化するテンプレート定義を決定することができる特徴がある。...</p>
+</section>
+<footer class=entry-footer><span title="2022-02-24 21:28:39 +0900 +0900">February 24, 2022</span></footer>
+<a class=entry-link aria-label="post link to enable_if 作ってみた" href=https://public-jun.github.io/cpp-enable-if/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>c++98 で is_integral 実装
 </h2>
 </header>
