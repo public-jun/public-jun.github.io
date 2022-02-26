@@ -64,6 +64,10 @@ menu:
       name: Search
       url: /search/
       weight: 5
+    - identifier: series
+      name: Series
+      url: /series/
+      weight: 6
 
 # Search Page
 outputs:
