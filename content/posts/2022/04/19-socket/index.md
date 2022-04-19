@@ -1,17 +1,16 @@
 ---
-title: "c++98で自作コンテナ その1"
-date: 2022-02-09T17:07:46+09:00
+title: "Socket 通信について"
+date: 2022-04-19T23:20:22+09:00
+description: ソケット通信についてざっくり理解
 draft: true
-tags: [42Tokyo, c++] 
+tags: [42Tokyo, webserv, socket通信] 
 categories: [42Tokyo]
-series: [c++98で自作コンテナ]
-url: "my-container-part1"
+series: [c++でHTTPサーバ作成]
+url: "socket"
 ---
 
 ### 1. はじめに
-これはc++98でコンテナを実装する備忘録です。
-コンテナがどのようにできているのかまず調べてみようと思います。
-
+xxxx
 
 ### x. Markdown CheetSheet
 
