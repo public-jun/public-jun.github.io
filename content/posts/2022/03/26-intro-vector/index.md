@@ -83,7 +83,7 @@ c++98 で STL コンテナの vector(c++98 ver) を自作していきます。
 ![図l](./vector-image.png)
 
 ## 最後に
-これらの特徴を押さえて次回実装編です。
+これらの特徴を押さえて次回は vector のイテレータ実装編です。
 
 ### 参考URL
 - https://nafuka.hatenablog.com/entry/2021/11/15/184200
