@@ -11,7 +11,7 @@ url: "cpp-my-vector2"
 
 ## 1. はじめに
 * * *
-[前回の基礎知識編](https://public-jun.github.io/cpp-my-vector1/)の続き、実装編です。
+[前回の基礎知識編](https://public-jun.github.io/cpp-my-vector1/)の続き、実装編(2)です。
 この記事では、vectorのイテレータを作ります。
 
 ## 2. 概要を掴む 
