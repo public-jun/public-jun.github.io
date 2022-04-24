@@ -99,8 +99,67 @@ private:
 
 ## 2. insert 実装
 * * *
+`ft::vector::insert`
+```cpp
+iterator insert(iterator pos, const_reference value); // (1)
 
-### 道具紹介
+void insert(iterator pos, size_type count, const_reference value); // (2)
+
+template <class InputIterator>
+void insert(iterator pos, InputIterator first, InputIterator last); // (3)
+```
+今回作成する `insert` は 3 種類です。
+### (1) の定義
+```cpp
+iterator insert(iterator pos, const_reference value)
+{
+    difference_type diff = pos - begin();
+    insert(pos, 1, value);
+    pointer p_pos = first_ + diff;
+    return iterator(p_pos);
+}
+```
+(1) は中で (2) を呼び出す実装にしています。
+
+まずは (2)から実装していきます。
+
+### (2) の定義
+```cpp
+void insert(iterator pos, size_type count, const_reference value)
+{
+    difference_type offset   = pos - begin();
+    size_type       new_size = size() + count;
+
+    if (count > 0)
+    {
+        if (new_size >= capacity())
+        {
+            __extend_capacity(count);
+        }
+
+        pointer p_pos    = first_ + offset;
+        pointer old_last = last_;
+
+        size_type after_pos_size = static_cast<size_type>(last_ - p_pos);
+        size_type left_count     = count;
+
+        __move_range(p_pos, old_last, count);
+        if (count > after_pos_size)
+        {
+            size_type unini_size = count - after_pos_size;
+            std::uninitialized_fill_n(old_last, unini_size, value);
+            left_count -= unini_size;
+        }
+        if (left_count > 0)
+        {
+            std::fill_n(p_pos, left_count, value);
+        }
+        last_ += count;
+    }
+}
+```
+#### 道具紹介
+
 
 ## 3. その他の関数
 
