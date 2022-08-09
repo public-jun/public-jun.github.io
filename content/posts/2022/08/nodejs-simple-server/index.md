@@ -37,56 +37,30 @@ const server = http.createServer((request, response) => {
 server.listen(port);
 
 ```
-xxxx
+```js
+const http = require("http");
+```
+`http`モジュールを利用します。
 
-### x. Markdown CheetSheet
+```js
+const server = http.createServer((request, response) => {
+    response.writeHead(200, {
+        "Content-Type": "text/html"
+    });
 
-#### Text Format
+    const responseMessage = "<h1>Hello World</h1>";
+    response.end(responseMessage);
+    console.log(`Sent a response : ${responseMessage}`);
+});
+```
+レスポンスのステータスコード(200)、ヘッダー("Content-Type": "text/html")、ボディ(responseMessage)を設定します。
 
-_Italic（斜体）_
-*Italic（斜体）*
+```js
+server.listen(port);
+```
+3000番ポートを使用します。
 
-__Emphasis（強調）__
-**Emphasis（強調）**
-
-~~Strikethrough（取り消し線）~~
-
-<details><summary>これは詳細表示の例です。</summary>詳細をこっちに書きます。</details>
-
-This is `inline`.
-
-### List
-* text
-    * test
-    * test
-
-- text
-    - test
-    - test
-
-1. text
-1. test
-    1. test
-
-#### Horizontal rules
-* * *
-***
-*****
-- - -
----------------------------------------
-
-#### Blockquotes（引用）
-> This is Blockquotes
-
-#### Links（参照）
-[]()
-
-#### Images（画像）
-![]()
-
-#### Tables（表）
-| id     | name    | date       |
-| ------ | ------- | ---------- |
-| 1      | test    | 2019-01-01 |
-| 2      | test    | 2019-01-02 |
-| 3      | test    | 2019-01-03 |
+```bash
+node main.js
+```
+[http://localhost:3000/](http://localhost:3000/)にアクセスします。
