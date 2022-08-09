@@ -15,4 +15,7 @@ https://public-jun.github.io/tags/
 https://public-jun.github.io/categories/
 となる。
 記事の Front matter内でタグ、カテゴリ追加 contents/posts/../記事.md
---- title: &amp;#34;HugoのサイトにTag機能を追加&amp;#34; date: 2022-02-04T15:39:20+09:00 draft: false tags: [42Tokyo, blog, Hugo, TIL] //追加 categories: [Tech] //追加 .</description></item></channel></rss>
+--- title: &amp;#34;HugoのサイトにTag機能を追加&amp;#34; date: 2022-02-04T15:39:20+09:00 draft: false tags: [42Tokyo, blog, Hugo, TIL] //追加 categories: [Tech] //追加 . . --- これで「42Tokyo」、「blog」、「Hugo」、「TIL」タグが追加され、
+記事自身は「Tech」というカテゴリに分類された。
+画面上部にMenu表示(Papermod) PaperModテーマはホームページ右上にMenu(ページへのショートカット)を作成することができる。
+config.yml</description></item></channel></rss>
